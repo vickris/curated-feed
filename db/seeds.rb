@@ -1,4 +1,4 @@
-15.times do |n|
+15.times do
   title = Faker::Lorem.sentence # all options available below
   description = Faker::Lorem.paragraph
   Post.create!(title:  title,
