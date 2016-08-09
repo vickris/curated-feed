@@ -262,7 +262,7 @@ has_many :tags, through: :post_tags
 Now that we've declared our relationships, we will add the ability to tag posts when creating or editing them. We have to change the line the specifies the permitted params when creating or updating a post to this and allow *tag_ids* as part of the params.
 ```ruby
 def post_params
-  params.require(:post).permit(:title, :desctiption, tag_ids: [])
+  params.require(:post).permit(:title, :description, tag_ids: [])
 end
 ```
 
